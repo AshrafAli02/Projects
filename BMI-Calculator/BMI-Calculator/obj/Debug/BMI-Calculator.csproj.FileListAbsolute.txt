@@ -1,0 +1,17 @@
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\bin\Debug\BMI-Calculator.exe.config
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\bin\Debug\BMI-Calculator.exe
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\bin\Debug\BMI-Calculator.pdb
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.csprojAssemblyReference.cache
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\App.g.cs
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator_MarkupCompile.cache
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator_MarkupCompile.lref
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\MainWindow.baml
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.g.resources
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI_Calculator.Properties.Resources.resources
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.csproj.GenerateResource.cache
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.csproj.CoreCompileInputs.cache
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.exe
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\BMI-Calculator.pdb
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\SIUnit.g.cs
+C:\Users\ashra\source\repos\BMI-Calculator\BMI-Calculator\obj\Debug\SIUnit.baml

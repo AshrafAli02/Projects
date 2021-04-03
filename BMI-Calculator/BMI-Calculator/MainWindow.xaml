@@ -1,0 +1,44 @@
+﻿<Window x:Class="BMI_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMI_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="900" Background="White" ResizeMode="NoResize">
+    <Grid ShowGridLines="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Background="DarkGoldenrod">
+                <TextBlock Text="BMI Calculator" HorizontalAlignment="Center" FontFamily="monospace" FontWeight="ExtraBold" Foreground="White" VerticalAlignment="Center" FontSize="50"  Margin="0,20,0,0"></TextBlock>
+            </StackPanel>
+            <Frame Grid.Row="1">
+                
+            </Frame>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="100" x:Name="SIUnit" Width="250" Click="Button_Click" Margin="20">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border CornerRadius="25" Background="#463190">
+                                <TextBlock Text="SI Units" HorizontalAlignment="Center" FontSize="35" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"></TextBlock>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Height="100" Width="250" Margin="20" Click="Button_Click_1">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border CornerRadius="25" Background="#463190">
+                                <TextBlock Text="US Units" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center"></TextBlock>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+    
+</Window>
