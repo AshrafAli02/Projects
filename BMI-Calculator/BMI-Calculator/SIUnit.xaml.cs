@@ -38,7 +38,7 @@ namespace BMI_Calculator
             {
                 bmical.Gender= "Female";
             }
-            bmical.Height= int.Parse(HeightBox.Text);
+            bmical.Height= double.Parse(HeightBox.Text);
             bmical.Weight= int.Parse(WeightBox.Text);
         }
         
@@ -48,7 +48,11 @@ namespace BMI_Calculator
             int cases = UnitSelection.SelectedIndex;
             int dummy=(int) bmical.casecheck(cases);
             double BmiValue = bmical._BMI;
-            BMIt.Text = dummy.ToString();
+            NameLAble.Text ="Name   :"+"Ashraf";
+            Gender.Text ="Gender  :"+ bmical.Gender;
+            Height.Text ="Height  :"+bmical.Height.ToString();
+            Weight.Text = "Weight   :"+ bmical.Weight.ToString();
+            BMIt.Text ="BMI : "+ dummy.ToString();
         
             if ((int)dummy < 16)
             {

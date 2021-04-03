@@ -51,7 +51,7 @@
                 <TextBox Grid.Row="2" Grid.Column="1" x:Name="HeightBox" Height="40"></TextBox>
                 <TextBox Grid.Row="3" Grid.Column="1" x:Name="WeightBox" Height="40"></TextBox>
                 <StackPanel Grid.Column="3" Grid.RowSpan="4" x:Name="DisplayPanel">
-                    <TextBlock x:Name="NameLAble" FontSize="20"></TextBlock>
+                    <TextBlock x:Name="NameLAble" FontSize="20" ></TextBlock>
                     <TextBlock x:Name="Gender" FontSize="20"></TextBlock>
                     <TextBlock x:Name="Height" FontSize="20"></TextBlock>
                     <TextBlock x:Name="Weight" FontSize="20"></TextBlock>
