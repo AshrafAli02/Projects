@@ -1,0 +1,58 @@
+﻿<Window x:Class="CoundownTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoundownTimer"
+        mc:Ignorable="d"
+        Title="CountdownTimer" Height="200" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="MainGrid" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="No Of Intervals" Margin="10"></TextBlock>
+            <TextBlock Text="Total Time" Margin="10"></TextBlock>
+            <TextBlock Text="Interval Time" Margin="10"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Margin="10" Background="AliceBlue" x:Name="intervalBox" BorderBrush="Black"></TextBox>
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <TextBlock Text="H:" Width="10" HorizontalAlignment="Left"></TextBlock>
+                <TextBox Width="50" Margin="5,0,0,0" x:Name="Hourbox"></TextBox>
+                <TextBlock Text="M:" Margin="5,0,0,0" Width="10" HorizontalAlignment="Left"></TextBlock>
+                <TextBox Width="50" Margin="5,0,0,0" x:Name="Minutebox"></TextBox>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBox Width="100" x:Name="Intervaltimebox"></TextBox>
+                <TextBlock Text="In Minutes" FontSize="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="25" Width="80" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="10" Background="#463190">
+                        <TextBlock Text="Start" Foreground="White" HorizontalAlignment="Center" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+            <Button Height="25" Width="80" Margin="10,0,0,0" Click="Button_Click_1">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Border CornerRadius="10" Background="#463190">
+                            <TextBlock Text="Clear" Foreground="White" HorizontalAlignment="Center" FontSize="12" VerticalAlignment="Center"></TextBlock>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+D:\Projects\CoundownTimer\CoundownTimer\bin\Debug\CoundownTimer.exe.config
+D:\Projects\CoundownTimer\CoundownTimer\bin\Debug\CoundownTimer.exe
+D:\Projects\CoundownTimer\CoundownTimer\bin\Debug\CoundownTimer.pdb
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.csprojAssemblyReference.cache
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\MainWindow.g.cs
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\App.g.cs
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer_MarkupCompile.cache
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer_MarkupCompile.lref
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\MainWindow.baml
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.g.resources
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.Properties.Resources.resources
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.csproj.GenerateResource.cache
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.csproj.CoreCompileInputs.cache
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.exe
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\CoundownTimer.pdb
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\watch.g.cs
+D:\Projects\CoundownTimer\CoundownTimer\obj\Debug\watch.baml
