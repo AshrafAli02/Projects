@@ -112,7 +112,7 @@
                     <GradientStop Color="#FF2E75BE" Offset="5"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock Text="EMI Per Months" FontSize="30" Foreground="YellowGreen" Margin="0,130,0,0" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="Emilable" FontSize="30" Foreground="YellowGreen" Margin="0,130,0,0" HorizontalAlignment="Center"></TextBlock>
             <TextBlock FontWeight="DemiBold" FontSize="50" x:Name="Emi" Foreground="White" HorizontalAlignment="Center"></TextBlock>
         </StackPanel>  
     </Grid>

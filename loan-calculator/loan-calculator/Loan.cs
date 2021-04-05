@@ -52,14 +52,14 @@ namespace loan_calculator
         }
         
 
-        public int Emicalculate()
+        public double Emicalculate()
         {
             double Value=0;
             double interest = (_interestPercentage*0.01)/12;
             double cal =Math.Pow((1 + interest), _noofMonths);
             double v = cal / (cal - 1);
             Value = (_loanAmount * interest) * v;
-            return (int)Value;
+            return Value;
         }
     }
 }

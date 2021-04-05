@@ -29,7 +29,9 @@ namespace loan_calculator
         private void CalculateEmi_Click(object sender, RoutedEventArgs e)
         {
             ValueSet();
-            Emi.Text =" Rs: " +l.Emicalculate().ToString()+"/-";
+            Emilable.Text = "EMI Per Months";
+            var EmiAmount = string.Format("{0:0.00}", l.Emicalculate());
+            Emi.Text = " Rs: " + EmiAmount.ToString() + "/-";
         }
         public void ValueSet()
         {
