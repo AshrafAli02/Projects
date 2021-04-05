@@ -1,0 +1,15 @@
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\bin\Debug\loan-calculator.exe.config
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\bin\Debug\loan-calculator.exe
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\bin\Debug\loan-calculator.pdb
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.csprojAssemblyReference.cache
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\MainWindow.g.cs
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\App.g.cs
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator_MarkupCompile.cache
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator_MarkupCompile.lref
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\MainWindow.baml
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.g.resources
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan_calculator.Properties.Resources.resources
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.csproj.GenerateResource.cache
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.csproj.CoreCompileInputs.cache
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.exe
+C:\Users\ashra\source\repos\loan-calculator\loan-calculator\obj\Debug\loan-calculator.pdb

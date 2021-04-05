@@ -1,0 +1,119 @@
+﻿<Window x:Class="loan_calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loan_calculator"
+        mc:Ignorable="d"
+        Title="Loan Calculator" Height="450" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.7*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E75BE" Offset="5"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Text="Loan Calculator" FontSize="50" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+        </StackPanel>
+        
+        <Grid ShowGridLines="False" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E75BE" Offset="5"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+                <TextBlock Text="Loan Amount" Foreground="White" Margin="50,35,0,0" FontSize="20" FontFamily="Sans Serif" FontWeight="DemiBold"></TextBlock>
+                <TextBlock Text="Interest %" Foreground="White" Margin="50,50,0,0" FontSize="20" FontFamily="Sans Serif" FontWeight="DemiBold"></TextBlock>
+                <TextBlock Text="No of Month" Foreground="White" Margin="50,55,0,0" FontSize="20" FontFamily="Sans Serif" FontWeight="DemiBold"></TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E75BE" Offset="5"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+                <TextBox Width="250" Height="50" x:Name="LoanAmount" Margin="10,25,0,0" BorderBrush="Black" FontSize="25" BorderThickness="5">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+                <TextBox Width="250" Height="50" Margin="10,25,0,0" x:Name="InterestPercentage" FontSize="25" BorderBrush="Black" BorderThickness="5">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"></Setter>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox Width="250" Height="50" Margin="10,25,0,0" x:Name="NoofMonths" FontSize="25" BorderBrush="Black" BorderThickness="5">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"></Setter>
+                        </Style>
+                        
+                    </TextBox.Resources>
+                </TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E75BE" Offset="2"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+                <Button Width="150" Content="Round Button" Height="50" x:Name="CalculateEmi" Margin="90,12,0,8.4" Click="CalculateEmi_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Border Background="LightBlue" CornerRadius="15">
+                                    <TextBlock Margin="10" FontWeight="DemiBold" FontSize="25" HorizontalAlignment="Center" Text="Calculate" VerticalAlignment="Center"></TextBlock>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+                <Button Height="50" Width="150" Margin="30,0,0,0" FontWeight="DemiBold" x:Name="ClearButton">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="15" Background="LightBlue">
+                        <TextBlock Text="Clear" HorizontalAlignment="Center" FontSize="25" VerticalAlignment="Center"></TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2E75BE" Offset="5"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Text="EMI Per Months" FontSize="30" Foreground="YellowGreen" Margin="0,130,0,0" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock FontWeight="DemiBold" FontSize="50" x:Name="Emi" Foreground="White" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>  
+    </Grid>
+</Window>
