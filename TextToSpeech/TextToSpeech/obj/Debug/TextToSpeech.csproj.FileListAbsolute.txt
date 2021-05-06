@@ -1,0 +1,15 @@
+D:\Projects\TextToSpeech\TextToSpeech\bin\Debug\TextToSpeech.exe.config
+D:\Projects\TextToSpeech\TextToSpeech\bin\Debug\TextToSpeech.exe
+D:\Projects\TextToSpeech\TextToSpeech\bin\Debug\TextToSpeech.pdb
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.csprojAssemblyReference.cache
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\MainWindow.g.cs
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\App.g.cs
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech_MarkupCompile.cache
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech_MarkupCompile.lref
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\MainWindow.baml
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.g.resources
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.Properties.Resources.resources
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.csproj.GenerateResource.cache
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.csproj.CoreCompileInputs.cache
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.exe
+D:\Projects\TextToSpeech\TextToSpeech\obj\Debug\TextToSpeech.pdb
