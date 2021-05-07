@@ -14,13 +14,21 @@
         <TextBlock Text="Text To Speech" HorizontalAlignment="Center" Foreground="Purple" VerticalAlignment="Top" FontSize="36" FontFamily="Tempus Sans ITC" FontWeight="Bold"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
            
-            <TextBox Height="200" Width="600" x:Name="ContentBox" HorizontalContentAlignment="Left" FontSize="16" MinWidth="600" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"></TextBox>
-            <CheckBox Content="Speach With SpellOut" HorizontalAlignment="Center" Margin="0,10,0,0" x:Name="splout"></CheckBox>
+            <TextBox Height="200" Width="600" x:Name="ContentBox" HorizontalContentAlignment="Left" FontSize="16" MinWidth="600" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <CheckBox Content="Speach With SpellOut" HorizontalAlignment="Center" Margin="10,10,0,0" x:Name="splout" FontSize="14"></CheckBox>
+                <ComboBox x:Name="Voiceselect" Height="25" Width="150" Margin="25,10,0,0" SelectedIndex="0" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+                    <ComboBoxItem Content="Male"></ComboBoxItem>
+                    <ComboBoxItem Content="Female"></ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            
         </StackPanel>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Height="40" Width="200" Content="Speech" x:Name="btn" Click="btn_Click" Background="Green" Foreground="White" FontSize="16" FontFamily="Tempus Sans ITC"></Button>
             <Button Height="40" Width="200" Content="Upload From File" Background="Blue" Foreground="White" FontSize="16" Margin="20,0,0,0" FontFamily="Tempus Sans ITC" Click="Uploadfromfile_Click" x:Name="Uploadfromfile"></Button>
-            <Button Height="40" Width="200" Content="Close" Foreground="White" Background="OrangeRed" Margin="20,0,0,0" FontFamily="Tempus Sans ITC" FontSize="16" Click="Button_Click"></Button>
+            <Button Height="40" Width="200" Content="Close" Foreground="White" Background="Red" Margin="20,0,0,0" FontFamily="Tempus Sans ITC" FontSize="16" Click="Button_Click"></Button>
+            <Button Height="40" Width="100" Margin="20,0,0,0" Content="Clear" FontFamily="Tempus Sans ITC" Background="LightBlue" Foreground="Black" FontSize="16" Click="Button_Click_1"></Button>
         </StackPanel>
         
     </Grid>

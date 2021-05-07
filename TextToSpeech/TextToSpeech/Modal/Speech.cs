@@ -23,7 +23,7 @@ namespace TextToSpeech.Modal
             return sb.ToString();
         }
 
-        public void StartSpeech(string text,bool value)
+        public void StartSpeech(string text,bool value,VoiceGender type)
         {
             if(value==true)
             {
@@ -36,6 +36,7 @@ namespace TextToSpeech.Modal
                 promptBuilder.EndStyle();
                 promptBuilder.AppendTextWithHint(text, SayAs.SpellOut);
                 SpeechSynthesizer speechSynthesizer = new SpeechSynthesizer();
+                speechSynthesizer.SelectVoiceByHints(type);
                 speechSynthesizer.Speak(promptBuilder);
             }
             else
@@ -49,6 +50,7 @@ namespace TextToSpeech.Modal
                 promptBuilder.EndStyle();
                 promptBuilder.AppendText(text);
                 SpeechSynthesizer speechSynthesizer = new SpeechSynthesizer();
+                speechSynthesizer.SelectVoiceByHints(type);
                 speechSynthesizer.Speak(promptBuilder);
             }
         }

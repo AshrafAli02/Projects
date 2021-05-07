@@ -27,11 +27,28 @@ namespace TextToSpeech
         public MainWindow()
         {
             InitializeComponent();
+            ContentBox.Focus();
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            speech.StartSpeech(ContentBox.Text, IsSpellout());
+            if (!string.IsNullOrEmpty(ContentBox.Text))
+            {
+                speech.StartSpeech(ContentBox.Text, IsSpellout(), voiceGender());
+            }
+            else
+            {
+                MessageBox.Show("Please Enter the Text or Select the text", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        public VoiceGender voiceGender()
+        {
+            if(Voiceselect.SelectedIndex==0)
+            {
+                return VoiceGender.Male;
+            }
+            return VoiceGender.Female;
         }
 
         public bool IsSpellout()
@@ -44,7 +61,17 @@ namespace TextToSpeech
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.Close();
+            if(MessageBox.Show("Are You Sure You Want to Close the Application.", "Confirmation", MessageBoxButton.OKCancel, MessageBoxImage.Information)==MessageBoxResult.OK)
+            {
+                Application.Current.MainWindow.Close();
+            }
+            else
+            {
+                ContentBox.Text = "";
+            }
+            
+            
+            //Application.Current.MainWindow.Close();
         }
 
         private void Uploadfromfile_Click(object sender, RoutedEventArgs e)
@@ -60,6 +87,11 @@ namespace TextToSpeech
                 string FileName = FilePath[FilePath.Length - 1];
                 ContentBox.Text= speech.FiletoReader(FileFrom);
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ContentBox.Text = "";
         }
     }
 }
